@@ -1,0 +1,19 @@
+<launch>
+
+    <arg name="sdf_robot_file" value="$(find my_yolo_track)/models/person_walking_0/model.sdf"/>
+    <arg name="robot_name" value="person_walking_0" />
+    <arg name="x" default="-2.0" />
+    <arg name="y" default="0.2" />
+    <arg name="z" default="0.8" />
+    <arg name="yaw" default="0.0" />
+
+    <include file="$(find spawn_robot_tools_pkg)/launch/spawn_sdf.launch">
+        <arg name="sdf_robot_file" value="$(arg sdf_robot_file)"/>
+        <arg name="robot_name" default="$(arg robot_name)" />
+        <arg name="x" value="$(arg x)" />
+        <arg name="y" value="$(arg y)" />
+        <arg name="z" value="$(arg z)" />
+        <arg name="yaw" value="$(arg yaw)" />
+    </include>
+    
+</launch>

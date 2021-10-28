@@ -1,0 +1,6 @@
+<launch>
+    <!-- Spawn CokeCan Model -->
+    <include file="$(find my_yolo_track)/launch/spawn_person0.launch" />
+    <!-- Make CokeCan Movable -->
+    <include file="$(find my_yolo_track)/launch/make_person0_movable.launch" />
+</launch>

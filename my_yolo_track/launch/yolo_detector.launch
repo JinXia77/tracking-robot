@@ -1,0 +1,5 @@
+<launch>
+ <!--start_tracking.py launch file-->
+ <node pkg = "my_yolo_track" type="test.py" name ="my_yolo_track" output="screen">
+ </node>
+</launch>
